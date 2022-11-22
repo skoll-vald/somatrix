@@ -125,8 +125,8 @@ h2 {
     font-size: 30px;
     line-height: 110%;
     /* identical to box height, or 44px */
-
     color: var(--black-color);
+    margin-bottom: 55px;
 }
 
 h3 {
@@ -351,4 +351,80 @@ hr {
 
 .features__point img {
     width: 38px;
+}
+
+.projects {
+    margin-top: 100px;
+    padding-top: 145px;
+}
+
+.projects__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.projects__item-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+}
+
+.projects__item-link {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.projects__item-text {
+    width: 196px;
+    height: 108px;
+}
+
+.projects__item-number {
+    width: 165px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+
+.projects__item-img {
+    margin-left: 94px;
+    margin-top: -100px;
+}
+
+.projects__item-linktext {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.blue {
+    color: var(--main-accent-color);
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.projects__bg {
+    position: absolute;
+    z-index: -1000;
+    background: linear-gradient(to top, var(--black-color), var(--black-color));
+    background-size: 700px 200px;
+    width: 700px;
+    height: 1660px;
+    left: 50%;
+    margin-top: -100px;
 }
