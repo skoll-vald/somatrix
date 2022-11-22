@@ -305,6 +305,7 @@ button {
 .features__tab {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .features__tab p {
@@ -312,8 +313,8 @@ button {
     font-weight: 700;
 }
 
-hr {
-    background-image: linear-gradient(90deg, rgba(56,189,248,1) 50%, rgba(248,248,248,1) 50%);
+.features__tab_hr {
+    background-image: linear-gradient(90deg, rgba(248,248,248,1) 50%, rgba(248,248,248,1) 50%);
     border: 0;
     height: 2px;
     width: 260px;
@@ -322,7 +323,22 @@ hr {
     display: block;
 }
 
-.features__tabs-content {
+.features__tab_hr.active {
+    background-image: linear-gradient(90deg, rgba(56,189,248,1) 50%, rgba(248,248,248,1) 50%);
+    border: 0;
+    height: 3px;
+    width: 260px;
+    margin: 2px 0 22px 0;box-sizing:
+    content-box;
+    display: block;
+}
+
+.features__tab-content {
+    display: none;
+    flex-direction: row;
+}
+
+.features__tab-content.active {
     display: flex;
     flex-direction: row;
 }
